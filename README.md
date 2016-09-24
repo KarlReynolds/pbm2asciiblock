@@ -1,6 +1,6 @@
 # pbm2asciiblock
 Converts plain PBM images to ASCII block text images - written in C++
-
+<code>
 /* (View this document with a fixed-width ( i.e. mono-spaced) font. e.g. "Courier New")
 +-------------------------------------------------------------------------------------+
 |	This work is a BankOfDogeland product and is licensed under a 					            |
@@ -429,3 +429,4 @@ DOCUMENTATION
 
 
 */
+</code>
