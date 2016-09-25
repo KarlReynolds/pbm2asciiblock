@@ -1,10 +1,10 @@
 /* (View this document with a fixed-width ( i.e. mono-spaced) font. e.g. "Courier New")
 +-------------------------------------------------------------------------------------+
-|	This work is a BankOfDogeland product and is licensed under a 					  |
-| 	Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License   |
-| 	http://creativecommons.org/licenses/by-nc-sa/4.0/								  |
-| 	20160922 Created by D.Reynolds													  |
-| 	20160924 Build Version															  |
+|   This work is a BankOfDogeland product and is licensed under as                    |
+|   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License   |
+|   http://creativecommons.org/licenses/by-nc-sa/4.0/                                 |
+|   20160922 Created by D.Reynolds                                                    |
+|   20160924 Build Version                                                            |
 +-------------------------------------------------------------------------------------+
 
                                          ▗▖ ▗▖                        
@@ -15,9 +15,8 @@
   ▟▛ █▌▐█ ▐█▗█▌▟█▐█▌ ▟█   █▌▗█  ▜█▖▐█   ▐█ ▐█ █▌ █▌▐█ ▐█ █▌▐█   ▟██   
   █▙██ ▐█▟█▘▐█ █▌▐█ ▟█▙▄▖ █▙▟█ ▟▄█▌▐█▙▟ █▛ █▛▗█▙█▛ ▐█ ▐█▟█ ▐█▙▟ ██▐▙  
   █▛▀  ▀▝▀▘ ▝▀ ▀▘▝▀ ▀▀▀▀▘ ▝▀▘▀ ▝▀▘  ▝▀▘ ▀▘ ▀▘▝▘▀▀   ▀▘ ▀▀   ▝▀▘ ▀▘ ▀▘ 
- ▐█    										       
- ▝▀ (Above logo is an example program output)                                                                    
-  
+ ▐█                                   
+ ▝▀ (Above logo is an example program output)
 
 DOCUMENTATION
 	1. WHAT IS THIS? (i.e. What does it do?)
