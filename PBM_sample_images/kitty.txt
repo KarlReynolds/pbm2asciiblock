@@ -1,0 +1,17 @@
+File opened for reading....
+Expected PBM type: P1
+Received PBM type: P1
+Correct filetype detected.
+Image height is: 14 pixels.
+Image width  is: 72 pixels.
+Finshed reading file....Now closing file.
+ASCII image height is: 7 characters.
+ASCII image width  is: 36 characters.
+  ▐▌▗▗▗       ▗▀▖ ▗▀▛▖    ▞▀▚▗▀▀▖   
+  ▐▌▖▘▘▗ ▗▄▖  ▐ ▝▀▌▞▚▙   ▐ ▗▖▌▄ ▐   
+  ▝█    ▚█▀▘  ▌   ▝▚▞▐   ▐ ▐▌▌█ ▐   
+   ▌    ▐     ▌    ▝▄▜   ▞▚▄▞▝▄▄▀▖  
+   ▘▄  ▄▝    ▝▀▐▌  ▐▌▀▘  ▌▄    ▗▖▌  
+  ▐ ▀▗▖▀ ▌   ▝▜  ▝▘  ▛▘  ▌▀▗  ▗▝▘▌  
+   ▚▄▖▗▄▞     ▘▀▄▄▄▄▀▝   ▝▚▄██▙▄▀   
+Operation completed successfully.
