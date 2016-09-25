@@ -3,11 +3,11 @@ Converts plain PBM images to ASCII block text images - written in C++
 <pre>
 /* (View this document with a fixed-width ( i.e. mono-spaced) font. e.g. "Courier New")
 +-------------------------------------------------------------------------------------+
-|	This work is a BankOfDogeland product and is licensed under a 					            |
-| 	Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License   |
-| 	http://creativecommons.org/licenses/by-nc-sa/4.0/								                  |
-| 	20160922 Created by D.Reynolds											                        		  |
-| 	20160924 Build Version												                            			  |
+|  This work is a BankOfDogeland product and is licensed under a 	              |
+|  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License    |
+|  http://creativecommons.org/licenses/by-nc-sa/4.0/		                      |
+|  20160922 Created by D.Reynolds						      |
+|  20160924 Build Version							      |
 +-------------------------------------------------------------------------------------+
 
                                          ▗▖ ▗▖                        
@@ -63,27 +63,29 @@ DOCUMENTATION
 	This results in the executable pbm2asciiblock, which can be run with an input PBM file as a mandatory argument,
 		$ ./pbm2asciiblock input_filename.pbm
 	
-	where input_filename.pbm is the name of your PBM image. Program output would be to the standard output (normally the terminal screen).
-	If the output is preferred in a text file it can be redirected:
+	where input_filename.pbm is the name of your PBM image. Program output would be to the standard output
+	(normally the terminal screen).	If the output is preferred in a text file it can be redirected:
 		$ ./pbm2asciiblock input.pbm > output.txt
 
 			
 4. HOW DOES IT WORK?
 	THEORY OF METHOD
-		ASCII block characters (Unicode range U+2580 to U+259F) contain characters that fill each quadrant of a character, and all possible combinations
-		of these quadrants. When combined with the space character this gives 16 combinations that enable a single character block to textually
-		represent a 2x2 pixel region.
+		ASCII block characters (Unicode range U+2580 to U+259F) contain characters that fill each quadrant 
+		of a character, and all possible combinations of these quadrants. When combined with the space character
+		this gives 16 combinations that enable a single character block to textually represent a 2x2 pixel region.
 	
 	PRACTICAL IMPLEMENTATION
 		The bit data in the image is read into an 2D array.
 		This array is then read as 2x2 pixel regions, and the block which resembles the 2x2 pixel region is returned 
-		as the ASCII block for that 2x2 pixel region in the PBM image. This ASCII block is written to standard out as a block of the ASCII image
-		before the next 2x2 pixel region is read. This reading and writing cycle is repeated until the entire image has been processed.
+		as the ASCII block for that 2x2 pixel region in the PBM image. This ASCII block is written to standard out 
+		as a block of the ASCII image before the next 2x2 pixel region is read. This reading and writing cycle is
+		repeated until the entire image has been processed.
 
 		The ASCII image is half the dimensions of the PBM image, since each ASCII block represents a 2x2 pixel region.
-		If the original image dimensions are an odd number (2N+1) the ASCII image will effectively need half a block of padding added to the right
-		or bottom of the image, since half of the PBM image (N+0.5) would result in 0.5 of an ASCII character, which is not possible.
-		So the padding is added to prevent the ASCII image edge being cut off.
+		If the original image dimensions are an odd number (2N+1) the ASCII image will effectively need half a block
+		of padding added to the right or bottom of the image, since half of the PBM image (N+0.5) would result in
+		0.5 of an ASCII character, which is not possible. So the padding is added to prevent the ASCII image edge
+		being cut off.
 
 	ENCODING FOR THIS IMPLEMENTATION:
 		For a 2x2 pixel region each pixel (when "on") is given a value 1, 2, 4, or 8 depending on it's position:
@@ -135,15 +137,18 @@ DOCUMENTATION
 		Install the GIMP graphics manipulation package with:
 			$ sudo apt get install gimp
 		
-		Run the program and create the required graphic as a Greyscale mode image. Images with around 10000 pixels (100x100) size may be too large
-		for the computer memory to deal with (core dumping errors seen) when converting to blocks later, so around 10,000 pixels is a soft upper limit.
+		Run the program and create the required graphic as a Greyscale mode image. Images with around 10000 pixels
+		(100x100) size may be too large	for the computer memory to deal with (core dumping errors seen) when 
+		converting to blocks later, so around 10,000 pixels is a soft upper limit.
 		
-		From within GIMP, select File > Export As and select the PBM file type. When saving select ASCII output form rather than binary.
-		This will produce a plain PBM file with a GIMP comment line in the file. The pbm2asciiblock will check for and ignore
-		this GIMP comment if present, so you don't need to edit the .pbm in a text editor and can pass it directly for ASCII conversion.
+		From within GIMP, select File > Export As and select the PBM file type. When saving select ASCII output
+		form rather than binary. This will produce a plain PBM file with a GIMP comment line in the file.
+		The pbm2asciiblock will check for and ignore this GIMP comment if present, so you don't need to edit
+		the .pbm in a text editor and can pass it directly for ASCII conversion.
 		
 		If you are using a different method to create the PBM file which creates comments elsewhere than the 2nd line
-		of the PBM file then edit the PBM, using a text editor, and remove those comment lines prior to passing the image into pbm2asciiblock.
+		of the PBM file then edit the PBM, using a text editor, and remove those comment lines prior to passing
+		the image into pbm2asciiblock.
 
 
 6. MISCELLANEOUS NOTES
@@ -192,7 +197,8 @@ DOCUMENTATION
 		- objectify & prettyify code (This code is essentially a proof of concept.)
 		- robustify treatment for arbitrary comment position
 		- modify to accept also P4 "RAW PBM" binary files, or other image data types.
-		- add figure & ground reversal feature, so output can be adapted for dark or light backgrounds. (Use NOT operator on PixelVal)
+		- add figure & ground reversal feature, so output can be adapted for dark or light backgrounds (Use NOT
+		  operator on PixelVal for this?)
 
 7. GALLERY OF EXAMPLES
 
