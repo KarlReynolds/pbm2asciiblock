@@ -3,11 +3,11 @@ Converts plain PBM images to ASCII block text images - written in C++
 <pre>
 /* (View this document with a fixed-width ( i.e. mono-spaced) font. e.g. "Courier New")
 +-------------------------------------------------------------------------------------+
-|  This work is a BankOfDogeland product and is licensed under a 	              |
+|  This work is a BankOfDogeland product and is licensed under a                      |
 |  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License    |
-|  http://creativecommons.org/licenses/by-nc-sa/4.0/		                      |
-|  20160922 Created by D.Reynolds						      |
-|  20160924 Build Version							      |
+|  http://creativecommons.org/licenses/by-nc-sa/4.0/                                  |
+|  20160922 Created by D.Reynolds                                                     |
+|  20160924 Build Version                                                             |
 +-------------------------------------------------------------------------------------+
 
                                          ▗▖ ▗▖                        
@@ -121,7 +121,7 @@ DOCUMENTATION
 		e.g. On a Linux Ubuntu operating system
 		
 		Install the powerful convert command package with:
-			$ sudo apt get install convert
+			$ sudo apt-get install convert
 		
 		To convert an image called foo.gif into plain PBM format image called bar.pbm:
 			$ convert -compress none foo.gif bar.pbm
@@ -135,7 +135,7 @@ DOCUMENTATION
 		e.g. On a Linux Ubuntu operating system
 		
 		Install the GIMP graphics manipulation package with:
-			$ sudo apt get install gimp
+			$ sudo apt-get install gimp
 		
 		Run the program and create the required graphic as a Greyscale mode image. Images with around 10000 pixels
 		(100x100) size may be too large	for the computer memory to deal with (core dumping errors seen) when 
